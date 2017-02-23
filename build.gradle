@@ -1,0 +1,17 @@
+group 'deepstreamHub'
+version '0.1'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'io.deepstream:deepstream.io-client-java:2.0.4'
+}
